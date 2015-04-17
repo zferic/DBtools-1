@@ -30,10 +30,6 @@ do
 	else
 		# remove the first row
 		sed '1 d' $f >>  $targetname.txt
-		#cat tmp.csv >> $targetname.csv
-		#tail -n +1 $f >> $targetname.csv
-		#sed '1,1d' $f > tmp.csv
-		#cat tmp.csv >>  $targetname.csv
 	fi
 
 	count=$((count + 1))
