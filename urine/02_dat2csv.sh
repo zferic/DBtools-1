@@ -35,7 +35,7 @@ do
 	#
 	paste targetname.txt name.txt a.txt b.txt > ab.txt 
 	sed '1,2 d' ab.txt > ab_tmp.txt
-	sed -i '1s/^/target\tms_id\tmass_intensity\tpeaks\n/' ab_tmp.txt 
+	sed -i '1s/^/target\tms_id\tmz\tpeaks\n/' ab_tmp.txt 
 	cat ab_tmp.txt | tr "\\t" "," > $csvfile 
 
 done
