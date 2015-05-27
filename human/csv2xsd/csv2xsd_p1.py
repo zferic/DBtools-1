@@ -45,7 +45,7 @@
 
 import sys
 import csv
-import re
+#import re
 
 #modify the field types if necessary
 FieldType = ['text','radio','notes', 'checkbox']
@@ -64,47 +64,9 @@ FieldType = ['text','radio','notes', 'checkbox']
 #   notes->char :   always char, using char(200) as default
 
 
-Format_String = \
-"<xs:element name=\"_elename_\" nillable=\"true\">\n" + \
-        "\t<xs:simpleType>\n" + \
-          "\t\t<xs:restriction base=\"xs:string\">\n" + \
-            "\t\t\t<xs:length value=\"200\" />\n" + \
-          "\t\t</xs:restriction>\n" + \
-        "\t</xs:simpleType>\n"    + \
-      "</xs:element>\n"
 
-Format_Date = \
-"<xs:element name=\"_elename_\" type=\"xs:date\" nillable=\"true\">\n" + \
-"</xs:element>\n"
-
-Format_Time = \
-"<xs:element name=\"_elename_\" type=\"xs:time\" nillable=\"true\">\n" + \
-"</xs:element>\n"
-
-Format_Int_Simple = \
-"<xs:element name=\"_elename_\" type=\"xs:integer\" nillable=\"true\">\n" + \
-"</xs:element>\n"
-
-Format_Int_Range = \
-"<xs:element name=\"_elename_\">\n" + \
-   "\t<xs:simpleType>\n"    + \
-      "\t\t<xs:restriction base=\"xs:integer\">\n"  + \
-         "\t\t\t<xs:minInclusive value=\"_min_\"/>\n" + \
-         "\t\t\t<xs:maxInclusive value=\"_max_\"/>\n" + \
-      "\t\t</xs:restriction>\n"   + \
-   "\t</xs:simpleType>\n" + \
-"</xs:element>\n"
-
-Format_Int_Enum_part1 = \
-"<xs:element name=\"_elename_\" nillable=\"true\">\n" + \
-    "\t<xs:simpleType>\n"   + \
-        "\t\t<xs:restriction base=\"xs:integer\">\n"
-
-
-Format_Int_Enum_part3 = \
-        "\t\t</xs:restriction>\n" + \
-    "\t</xs:simpleType>\n"  + \
-"</xs:element>\n"
+Temp_mapping = \
+"<edd:field source=\"small_name\" target=\"cap_name\"/>\n"
 
 
 
@@ -117,101 +79,23 @@ def GenTemplate(info):
     ## extract related fields
     ## branching logic is not considered here
     field_name     = info[0]        # name
-    field_type     = info[3]        # data type
-    field_choices  = info[5]        # data options
-    field_note     = info[6]        # specific notes, such as date format
-    field_valid    = info[7]
-    field_min      = info[8]
-    field_max      = info[9]
+#    field_type     = info[3]        # data type
+#    field_choices  = info[5]        # data options
+#    field_note     = info[6]        # specific notes, such as date format
+#    field_valid    = info[7]
+#    field_min      = info[8]
+#    field_max      = info[9]
 
     # change to lower case
-    field_name = field_name.strip().lower()
+    name_low = field_name.strip().lower()
+    name_upp = field_name.strip().upper()
 
     # remove the empty space
-    field_type = field_type.strip()
+    name_low = name_low.strip()
+    name_upp = name_upp.strip()
 
-    ##
-    ## Use previously defined format to generate the field sections
-    ##
-
-    # notes field :
-    #                use the string format
-    if(field_type == 'notes'):
-        # replace _elename_ in Format_String with the current field_name
-        format_string = Format_String.replace('_elename_', field_name)
-
-
-    # text field :
-    #               date format
-    #               time format
-    #               integer format
-    #               string format
-    if(field_type == 'text'):
-            # date
-            index_date_1 = field_note.find('MM-DD-YYY')
-            index_date_2 = field_note.find('MM/DD/YYY')
-
-            # time
-            index_time_1 = field_note.find('hh:mm')
-            index_time_2 = field_note.find('Military Time')
-
-            # integer
-            index_int = field_valid.find('integer')
-
-            # string
-            n = 0
-
-            if (index_date_1 > -1 or index_date_2 > -1):
-                n = 1
-
-            if (index_time_1 > -1 or index_time_2 > -1):
-                n = 2
-
-            if (index_int > -1):
-                n = 3
-
-            if n == 1:
-                format_string = Format_Date.replace('_elename_', field_name)
-            elif n == 2:
-                format_string = Format_Time.replace('_elename_', field_name)
-            elif n == 3:
-                # integer list, check min and max
-                field_min = field_min.strip()
-                field_max = field_max.strip()
-                if len(field_min) == 0 and len(field_max) == 0:
-                    format_string = Format_Int_Simple.replace('_elename_', field_name)
-
-                if len(field_min) > 0 and len(field_max) > 0:
-                    format_string = Format_Int_Range.replace('_elename_', field_name)
-                    format_string = format_string.replace('_min_', field_min)
-                    format_string = format_string.replace('_max_', field_max)
-            else:
-                format_string = Format_String.replace('_elename_', field_name)
-
-
-    # radio and checkbox :
-    #                   multiple choices format
-    if(field_type == 'radio' or field_type == 'checkbox'):
-        # integer list
-        list_int = []
-
-        # extract integers out from field_choices
-        sepintlist = field_choices.split('|')
-
-        for item in sepintlist:
-            # extract the 1st integer in each item
-            found_int = re.search("\d+", item)
-            list_int.append(found_int.group())
-
-        #print list_int
-        format_str1 = Format_Int_Enum_part1.replace('_elename_', field_name)
-        format_str3 = Format_Int_Enum_part3
-        format_str2 = ""
-
-        for i in list_int:
-            format_str2 = format_str2 + "\t\t\t<xs:enumeration value=\"" + i + "\" />\n"
-
-        format_string = format_str1 + format_str2 + format_str3
+    format_string = Temp_mapping.replace('small_name', name_low)
+    format_string = format_string.replace('cap_name', name_upp)
 
     return format_string
 
@@ -247,16 +131,11 @@ def main():
         tablename = row[1]
         tablename = tablename.strip()
         if tablename == "postpartum_data_abstraction":
-            #print row[:2]
-#            print row
-
 
             row_temp = GenTemplate(row)
 
             # output the row_temp to the text file
             o_file.write(row_temp)
-#            print datatype
-
 
     # close output file
     o_file.close()
