@@ -238,7 +238,7 @@ def main():
     file = csv.reader(open(filename, "rb"));
 
     # open text file to write
-    o_fname = filename + ".txt"
+    o_fname = filename + "_part1.xsd"
     o_file = open(o_fname, "w")
 
     # look at the second column, find the right table to work on
