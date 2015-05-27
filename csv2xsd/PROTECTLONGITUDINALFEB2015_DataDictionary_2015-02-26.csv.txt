@@ -1,0 +1,1713 @@
+<xs:element name="ppdate" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppinterviewer" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+			<xs:enumeration value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppotherinterviwer" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphospital_id" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+			<xs:enumeration value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppothrhospital_id" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprecord_number" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppadmission_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdischarge_date_report" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppdischarge_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="admission_diagnosis" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="admission_diagnosis_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_1_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_2_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_3_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_4_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppfinal_diagnosis_5_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_1_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_2_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_3_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_4_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcomplications_5_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_1_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_2_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_3_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_4_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppoperations_5_icd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdatelabonset" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptimelabonset">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="00:01"/>
+			<xs:maxInclusive value="23:59"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptypelabor" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppaugmneed" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppinduct" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmedcondt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppobstcondt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppothercondt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmeduse" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmed1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppretlabw" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppretlabd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphospital" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmedicat" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmedusept" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmethdpretlbr" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphistphys_exam_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphistphy_exam_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppchief_complaint" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphistory_present_illness" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphistphys_bp_syst" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="pphistphys_bp_diast" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_pulse" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_resp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_temp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_matlwghtlb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_matlwghtoz" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphistphysc_genitalia" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphistphysc_extremities" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppdiagnosis_physicalexam" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptreatmt_physicalexam" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmembranes" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmembranes_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmembranes_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppexpulsionmbs" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pppvsadmdate" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppvsadmtime" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbpadmnsyst" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbpadmndiast" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppulseadmn" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptempadm" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbrthadm" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppart_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbppartumsyst" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbppartum_diast" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppostpart" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptempppartum" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbrthppartum" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdischg_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbpdschrgsyst" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbpdischrgdiast" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pppdischrg" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptempdischrg" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbrthdischrg" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pplabor_date1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_time7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_date7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpsyst7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplaborbpdiast7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_fht7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_dilat7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_effacmt7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_present7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_station7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_membns7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_contrctns7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplabor_medictn7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppstagetiming" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppfirststagehrs" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppfirststagemins" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppsecondstagehrs" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppfsecondstagemins" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppthirdstagehrs" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppthirdstagemins" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="pptotaltimlabrhrs" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="pptotaltimlabrmins" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppdatedel" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptimedel">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="00:01"/>
+			<xs:maxInclusive value="23:59"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptypedel" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppspontan" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppopertdel" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppepisiot" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppvaglacn" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pplaceration" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcesarsect" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppreascsect" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+			<xs:enumeration value="5" />
+			<xs:enumeration value="6" />
+			<xs:enumeration value="7" />
+			<xs:enumeration value="97" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppcervxdltd" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppabnlfhrate" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppfetalpositn" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="97" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppfetalposit97" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppothercs" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppor_entry_start" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppor_entry_end" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppepi_spinal_anesth" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppesanesth_admdate" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppanest_start_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppanest_end_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppanest_comments" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppblood_loss" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppdelcompl" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppchorioamnionitis" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmaternal_fever" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pputerine_tenderness" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmaternal_tachycardia" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppfetal_tachycardia" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmaternal_wbc" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppsmelling_amnioticfluid" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppgestational_hypertension" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pppreeclampsia" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppabruptio_placenta" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppabruptio_placenta_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppabruptio_placenta_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphemorrhage" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphemorrhage_bloodloss" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptransfusion" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptransfusion_prbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmaternal_seizures" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppmaternal_seizures_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmaternal_seizures_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdelcomplesp" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppcbcdiff_date_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_time_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_wbc_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbcdiff_neu_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_lymp_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_rbc_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hgb_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hct_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_plt_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_date_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_time_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_wbc_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbcdiff_neu_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_lymp_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_rbc_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hgb_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hct_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_plt_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_date_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_time_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_wbc_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbcdiff_neu_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_lymp_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_rbc_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hgb_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hct_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_plt_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_date_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_time_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_wbc_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbcdiff_neu_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_lymp_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_rbc_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hgb_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hct_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_plt_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_date_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_time_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_wbc_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbcdiff_neu_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_lymp_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_rbc_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hgb_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_hct_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbcdiff_plt_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_date_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_time_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_pt_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_ptt_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_inr_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_date_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_time_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_pt_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_ptt_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_inr_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_date_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_time_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_pt_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_ptt_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_inr_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_date_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_time_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_pt_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_ptt_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_inr_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_date_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_time_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_pt_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_ptt_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcoagulationlab_inr_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalysdate1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalystime1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcolr1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppaspct1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgluc1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbil1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppketbs1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdensd1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppprot1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppph1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppurobil1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnitrite1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppblood1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppleukocyte1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprbc1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppwbc1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcasts1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbacts1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuaothrs1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuasquamous1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalysdate2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalystime2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcolr2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppaspct2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgluc2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbil2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppketbs2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdensd2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppprot2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppph2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppurobil2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnitrite2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppblood2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppleukocyte2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprbc2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppwbc2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcasts2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbacts2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuaothrs2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuasquamous2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalysdate3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalystime3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcolr3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppaspct3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgluc3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbil3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppketbs3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdensd3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppprot3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppph3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppurobil3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnitrite3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppblood3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppleukocyte3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprbc3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppwbc3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcasts3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbacts3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuaothrs3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuasquamous3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalysdate4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalystime4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppaspct4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcolr4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgluc4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbil4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdensd4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppketbs4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppprot4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppph4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppurobil4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnitrite4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppblood4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppleukocyte4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprbc4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppwbc4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbacts4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcasts4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuaothrs4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuasquamous4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalysdate5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="urinalystime5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcolr5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppaspct5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgluc5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbil5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppketbs5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdensd5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppprot5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppph5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppurobil5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnitrite5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppblood5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppleukocyte5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pprbc5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppwbc5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcasts5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbacts5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuaothrs5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppuasquamous5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagefreq1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq6" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq7" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_8" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_8" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_8" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef8" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq8" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_9" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_9" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_9" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef9" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq9" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_10" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_10" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_10" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef10" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq10" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_11" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_11" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_11" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef11" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq11" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_12" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_12" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_12" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef12" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq12" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_13" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_13" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_13" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef13" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq13" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_14" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_14" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_14" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef14" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq14" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_date_15" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_time_15" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_name_15" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_dosagef15" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppmedications_freq15" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgafstlmpw" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppgafstlmpd" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnewborn" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppterm" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppsex" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppweightp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppweighto" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppnblength" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppapgar_score1" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppapgar_score5" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppapgar_score10" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppsecretions_volume" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppballard_score" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppchestcircumference" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppheadcircumference" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppabdominalcircumference" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppbreastfeed" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppbottlefeed" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppglucwater" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppphototherp" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppcomplic" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppspecfcomplic" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pplong_hosp" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppbloodtrfn" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppresucitn" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0" />
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppnbdischarge_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppinstn_breastfeed" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppinstruction_bls" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppneonatalscreen" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppneonatalsun" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppsunexpos_freq" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphearingtest_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppbloodtest_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphearingtest_results" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppbloodtest_type" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+			<xs:enumeration value="4" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppbloodtest_rh" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppdirect_coombs" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptbil_date_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_time_1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdb1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppidb1" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_date_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_time_2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdb2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppidb2" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_date_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_time_3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdb3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppidb3" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_date_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_time_4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdb4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppidb4" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_date_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil_time_5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptbil5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppdb5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppidb5" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbc_1_wbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_neu" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_lymp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_hgb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_hct" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_1_plt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbc_2_wbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_neu" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_lymp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_hgb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_hct" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_2_plt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbc_3_wbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_neu" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_lymp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_hgb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_hct" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_3_plt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbc_4_wbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_neu" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_hgb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_lymp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_hct" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_4_plt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_neu" type="xs:time" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="cbc_5_wbc" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_lymp" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_hgb" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_hct" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcbc_5_plt" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcrp_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppccrp_time" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppother_abnormal" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+			<xs:enumeration value="9999" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppcbcother_abnormal" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pptriple_dye_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pptriple_dye_used" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pperythromycin_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pperythromycin_used" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppvitk_used" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppvitk_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pphepb_used" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="2" />
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="pphepb_date" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="pplotnum" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppexpdate" type="xs:integer" nillable="true">
+</xs:element>
+<xs:element name="ppcommentsnb" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1" />
+			<xs:enumeration value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="ppnbcomments" nillable="true">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:length value="200" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
