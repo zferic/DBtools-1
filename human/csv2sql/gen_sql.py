@@ -70,7 +70,7 @@ Template_No_Constraint = \
 
 Template_Constraint = \
 "fieldname type null_str,\n" + \
-"CONSTRAINT_tablename_fieldname_CK CHECK (conditions),\n"
+"CONSTRAINT tablename_fieldname_CK CHECK (conditions),\n"
 
 
 # the first column is the data field
